@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tiandawu.loadingview.MainActivity">
+
+
+    <com.tiandawu.loadingview.LoadingView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <com.tiandawu.loadingview.LoadingView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        app:isNeedBackground="false" />
+
+    <com.tiandawu.loadingview.LoadingView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        app:innerTriangleColor="@android:color/holo_orange_dark"
+        app:innerTriangleRadius="8dp"
+        app:outerCircleColor="@android:color/holo_blue_dark"
+        app:outerCircleRadius="16dp" />
+
+    <com.tiandawu.loadingview.LoadingView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        app:backgroundColor="@android:color/holo_orange_light" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/loading_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="5dp">
+
+        <com.tiandawu.loadingview.LoadingView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:innerTriangleRadius="6dp"
+            app:isNeedBackground="false"
+            app:outerCircleRadius="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加载中..."
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>
